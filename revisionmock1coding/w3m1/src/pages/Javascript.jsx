@@ -1,0 +1,37 @@
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import styles from "./All.module.css"
+
+const Javascript = () => {
+  
+  const[data,setData]=useState([])
+  const[page,setpage]=useState(1)
+
+  useEffect(()=>{
+    axios.get(`https://api.github.com/search/repositories?q=stars:%3E1+language:javascript`)
+    .then((r)=>setData(r.data.items))
+  
+  },[])
+
+  data.sort((a,b)=>{
+    return b.stargazers_count  - a.stargazers_count 
+
+  })
+
+  //console.log(data)
+  
+  return (
+    <div className={styles.container}>{data.map((ele)=>{
+      return <a href={ele.clone_url} key={ele.id}> <div key={ele.id}>
+        <img src={ele.owner.avatar_url} alt="" />
+<p>{ele.name}</p>
+<p>{ele.language}</p>
+<p>{ele.stargazers_count} Starts</p>
+<p>{ele.forks_count} Forks</p>
+      </div>
+      </a>
+    })}</div>
+  )
+}
+
+export default Javascript

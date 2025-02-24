@@ -1,0 +1,17 @@
+.formgrid{
+    margin-top:50px;
+    text-align: center;
+}
+.formgrid div{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    width:60%;
+    margin: auto;
+    margin-bottom:20px;
+margin-top:40px;
+
+}
+#btn{
+    text-align:center;
+}

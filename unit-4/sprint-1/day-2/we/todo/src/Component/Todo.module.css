@@ -1,0 +1,30 @@
+.int {
+  border: "none";
+  border-radius: 7px;
+  height: 40px;
+  width: 80%;
+  margin-right: 10px;
+
+  font-size: 25px;
+}
+.btn {
+  border-radius: 7px;
+  height: 45px;
+  width: 10%;
+  border: "none";
+  font-size: 30px;
+  background-color: white;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+.value {
+  border: "none";
+  border-radius: 7px;
+  height: 40px;
+  width: 80%;
+  margin-right: 10px;
+
+  font-size: 25px;
+}

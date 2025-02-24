@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:capitalize;
+    text-decoration: none;
+}
+body {
+    min-height: 100vh;
+}
+.menu{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding:20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+
+}
+header .logo {
+margin-right:8%
+}
+ul{
+    list-style: none;
+    float: left;
+}
+.list{
+    position: relative;
+    float: left;
+}
+.title{
+ font-size:16px;
+  padding:10px;
+  color:#333;
+  display: block;
+}
+ .title:hover{
+ 
+    color:#ED0331
+}
+.courselist{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display:none;
+}
+.coursesDiv{
+   cursor: pointer;
+   margin-top:5%;
+   padding:10px
+}
+.coursesDiv p{
+   font-size:17px;
+}
+.web{
+    line-height:30px;
+}
+.courses{
+    width: 100%;
+     margin-bottom: 10px;;
+}
+.webtitle{
+    line-height:36px;
+}
+.apply{
+    background-color:#ED0331;
+    width: 170px;
+    height:50px;
+    color:white;
+    border: none;
+    border-radius:8px;
+    cursor: pointer;
+}
+.login{
+    width: 100px;
+    height:50px;
+    color:white;
+    border: none;
+    border-radius:8px;
+    background: transparent;
+    border: 1px solid #ED0331;
+    color:#ED0331;
+    cursor: pointer;
+}
+#menu-bar{
+    display: none;
+}
+label{
+    display: none;
+}
+/* 
+@media(min-width:830px) and (max-width:991px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding:20px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        z-index: 1000;
+    
+    }
+    header .logo {
+    margin-right:2%
+    }
+    ul{
+        list-style: none;
+        float: left;
+    }
+    .list{
+        position: relative;
+        float: left;
+    }
+    .title{
+     font-size:13px;
+      padding:10px;
+      color:#333;
+      display: block;
+    }
+     .title:hover{
+     
+        color:#ED0331
+    }
+    .courselist{
+        position: absolute;
+        left: 0;
+        width: 300px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display:none;
+    }
+    .coursesDiv{
+       cursor: pointer;
+       margin-top:5%;
+       padding:10px
+    }
+    .coursesDiv p{
+       font-size:17px;
+    }
+    .web{
+        line-height:30px;
+    }
+    .courses{
+        width: 100%;
+         margin-bottom: 10px;;
+    }
+    .webtitle{
+        line-height:36px;
+    }
+    .apply{
+        background-color:#ED0331;
+        width: 150px;
+        height:50px;
+        color:white;
+        border: none;
+        border-radius:8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .login{
+        width: 100px;
+        height:50px;
+        color:white;
+        border: none;
+        border-radius:8px;
+        background: transparent;
+        border: 1px solid #ED0331;
+        color:#ED0331;
+        cursor: pointer;
+    }
+    #menu-bar{
+        display: none;
+    }
+    label{
+        display: none;
+        font-size:20px;
+        color:#333;
+        cursor: pointer;
+    }
+    
+}
+
+@media(min-width:620px)and (max-width:829px){
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding:20px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        z-index: 1000;
+    
+    }
+
+    header .logo {
+    margin-right:2%
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid black;
+    }
+    ul{
+        list-style: none;
+        float: left;
+    }
+    .list{
+        position: relative;
+        float: left;
+        
+    }
+    .title{
+     font-size:17px;
+      padding:10px;
+      color:#333;
+      display: block;
+    }
+     .title:hover{
+     
+        color:#ED0331
+    }
+    .courselist{
+        position: absolute;
+        left: 0;
+        width: 300px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display:none;
+    }
+    .coursesDiv{
+       cursor: pointer;
+       margin-top:5%;
+       padding:10px
+    }
+    .coursesDiv p{
+       font-size:17px;
+    }
+    .web{
+        line-height:30px;
+    }
+    .courses{
+        width: 100%;
+         margin-bottom: 10px;;
+    }
+    .webtitle{
+        line-height:36px;
+    }
+    .apply{
+        background-color:#ED0331;
+        width: 150px;
+        height:50px;
+        color:white;
+        border: none;
+        border-radius:8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .login{
+        width: 100px;
+        height:50px;
+        color:white;
+        border: none;
+        border-radius:8px;
+        background: transparent;
+        border: 1px solid #ED0331;
+        color:#ED0331;
+        cursor: pointer;
+    }
+    #menu-bar{
+        display: none;
+    }
+    label{
+        display: none;
+    }
+}
+@media(min-width:480px)and (max-width:619px){
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding:20px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        z-index: 1000;
+    
+    }
+
+    header .logo {
+    margin-right:2%
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid black;
+        display:none;
+    }
+    ul{
+        list-style: none;
+        float: left;
+    }
+    .list{
+        position: relative;
+        float: left;
+        
+    }
+    .title{
+     font-size:17px;
+      padding:10px;
+      color:#333;
+      display: block;
+    }
+     .title:hover{
+     
+        color:#ED0331
+    }
+    .courselist{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display:none;
+    }
+    .coursesDiv{
+       cursor: pointer;
+       background: #fff;
+       margin-top: -1%;
+     }
+    .coursesDiv p{
+       font-size:15px;
+       
+    }
+   .apply{
+        background-color:#ED0331;
+        width: 150px;
+        height:50px;
+        color:white;
+        border: none;
+        border-radius:8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .login{
+        width: 100px;
+        height:50px;
+        color:white;
+        border: none;
+        border-radius:8px;
+        background: transparent;
+        border: 1px solid #ED0331;
+        color:#ED0331;
+        cursor: pointer;
+    }
+    label{
+        display:initial;
+    }
+     .list{
+        width: 100%;
+     }
+     .courselist{
+        position: relative;
+        width: 100%;
+     }
+     .courses{
+        background:#eee
+     }
+     #menu-bar:checked ~ .navbar{
+        display:initial;
+     }
+}
+@media(min-width:320px)and (max-width:480px){
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding:20px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        z-index: 1000;
+    
+    }
+
+    header .logo {
+    margin-right:2%
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid black;
+        display:none;
+    }
+    ul{
+        list-style: none;
+        float: left;
+    }
+    .list{
+        position: relative;
+        float: left;
+        
+    }
+    .title{
+     font-size:17px;
+      padding:10px;
+      color:#333;
+      display: block;
+    }
+     .title:hover{
+     
+        color:#ED0331
+    }
+    .courselist{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display:none;
+    }
+    .coursesDiv{
+       cursor: pointer;
+       background: #fff;
+       margin-top: -1%;
+     }
+    .coursesDiv p{
+       font-size:15px;
+       
+    }
+   .apply{
+        background-color:#ED0331;
+        width: 150px;
+        height:50px;
+        color:white;
+        border: none;
+        border-radius:8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .login{
+        width: 100px;
+        height:50px;
+        color:white;
+        border: none;
+        border-radius:8px;
+        background: transparent;
+        border: 1px solid #ED0331;
+        color:#ED0331;
+        cursor: pointer;
+    }
+    label{
+        display:initial;
+    }
+     .list{
+        width: 100%;
+     }
+     .courselist{
+        position: relative;
+        width: 100%;
+     }
+     .courses{
+        background:#eee
+     }
+     #menu-bar:checked ~ .navbar{
+        display:initial;
+     }
+} */

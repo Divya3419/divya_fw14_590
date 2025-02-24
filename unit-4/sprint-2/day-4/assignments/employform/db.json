@@ -1,0 +1,101 @@
+{
+  "employ": [
+    {
+      "username": "shubham",
+      "age": "25",
+      "address": "dfdsfsd",
+      " department": "Tech",
+      "salary": "3243434",
+      "id": 1
+    },
+    {
+      "username": "divya",
+      "age": "25",
+      "address": "3eetsd",
+      "married": true,
+      " department": "Tech",
+      "salary": "56555566",
+      "id": 2
+    },
+    {
+      "username": "shubham",
+      "address": "fgdgdf",
+      "age": "25",
+      " department": "Non-Tech",
+      "salary": "56555566",
+      "id": 3
+    },
+    {
+      "username": "shubham",
+      "age": "25",
+      "address": "fgdgdf",
+      " department": "Tech",
+      "salary": "56555566",
+      "married": true,
+      "id": 4
+    },
+    {
+      "username": "divya",
+      "age": "25",
+      "address": "dfdsfsd",
+      " department": "Tech",
+      "salary": "3243434",
+      "married": true,
+      "id": 5
+    },
+    {
+      "username": "dfdg",
+      "age": "25",
+      "address": "hgzchgdhs",
+      " department": "Tech",
+      "salary": "555",
+      "id": 6
+    },
+    {
+      "username": "shubham",
+      "age": "25",
+      "id": 7
+    },
+    {
+      "username": "rajiv",
+      "age": "89",
+      "address": "malik nagar",
+      " department": "Tech",
+      "salary": "890000",
+      "married": true,
+      "id": 8
+    },
+    {
+      "username": "dfdg",
+      "age": "25",
+      "address": "dfdsfsd",
+      " department": "Non-Tech",
+      "married": true,
+      "id": 9
+    },
+    {
+      "salary": "3243434",
+      "id": 10
+    },
+    {
+      "username": "ravi",
+      "age": "96",
+      "address": "ram",
+      " department": "Non-Tech",
+      "salary": "896666",
+      "married": true,
+      "id": 11
+    },
+    {
+      "username": "shubham",
+      "id": 12
+    },
+    {
+      "username": "shubham",
+      "id": 13
+    },
+    {
+      "id": 14
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "status": false
+    },
+    {
+      "title": "learn redux",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "uuid",
+      "status": false,
+      "id": 3
+    }
+    
+  ]
+}

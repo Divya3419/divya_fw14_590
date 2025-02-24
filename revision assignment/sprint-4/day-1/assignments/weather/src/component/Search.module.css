@@ -1,0 +1,39 @@
+.int{
+    font-size: 25px;
+    width:90%;
+    border:none;
+}
+.box{
+    display:flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+    border-radius:6px;
+    height:60px;
+}
+.box img{
+    margin-top:10px;
+    width:10%;
+    height:70%;
+}
+.data{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    width: 90%;
+    margin:auto;
+    margin-top:30px;
+    gap:10px;
+    text-align: center;
+}
+.days{
+    border:1px solid black;
+    font-size: 10px;
+}
+.temp{
+    display:grid;
+    grid-template-columns: repeat(2,1fr)
+}
+.days img{
+    width:90%;
+}

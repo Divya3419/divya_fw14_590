@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            width:80%;
+            margin:auto;
+            display:grid;
+            grid-template-columns: 20% 60% 20%;
+            margin-top:30px;
+        }
+        .sec{
+            
+            display:grid;
+            grid-template-columns: repeat(6,1fr);
+            font-size:15px;
+            font-family: "open sans";
+            flex-wrap: wrap;
+        }
+        button{
+            color:rgb(52, 52, 123);
+            background-color: rgb(200, 200, 216);
+            border:none;
+            margin-top:10px;
+            border-radius:6px;
+            height: 40px;
+        }
+        #third{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:30px;
+        }
+    #dropDown{
+        border:none;
+        width:90px;
+    }
+        #dropDown:hover{
+            width:90px;
+            height:50px;
+            border:none;
+            color:rgb(219, 129, 129);
+            background-color:rgb(241, 226, 226);
+            border-radius:6px;
+        }
+        
+        .hamburger {
+            display:none;
+            width:40%;
+            cursor: pointer;
+        }
+        
+        #nav{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+        }
+
+        @media screen and (max-width: 412px) {
+  
+            .sec{
+                display:none;
+                width:100%;
+                flex-direction: column;
+            }
+            .sec.show{
+display:flex;
+            }
+            .hamburger{
+            display:block;
+        }
+}
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+    <div id="nav">
+        <button class="hamburger">
+            show
+        </button>
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt=""/>
+    </div>
+    <div class="sec">
+
+<select name=""id="dropDown">
+    <option value="">COURSES</option>
+    <option value="Full Time">
+<p>Full Stack Web Developer</p>
+
+    </option>
+
+    <option value="">
+
+            <p>Part Time</p>
+            <p>Full Stack Web Developer</p>
+           
+    </option>
+    <option value="">
+        <p>Data Analytics</p>
+    </option>
+</select>
+<p>FEES & ISA</p>
+<p>ABOUT US</p>
+<p>HIRE FROM US</p>
+<p>FAQ</p>
+<p>EVENT</p>
+    </div>
+    <div id="third">
+        <button>REFFER & EARN</button>
+        <button>LOGIN</button>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+let hamburger=document.getElementsByClassName(".humburger")
+let sec=document.getElementsById("#sec")
+humburger.addEventListener("click",()=>{
+    sec.classList.toggle("show")
+})
+</script>

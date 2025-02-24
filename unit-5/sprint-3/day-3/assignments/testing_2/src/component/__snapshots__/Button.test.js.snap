@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Tests should match snapshot 1`] = `
+<button
+  className="btn green  
+ghost"
+  data-testid="Button1"
+>
+  add counter
+</button>
+`;

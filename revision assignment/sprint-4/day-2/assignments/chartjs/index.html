@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+</head>
+<body>
+    <input type="text" id="month" placeholder="Month">
+    <input type="text" id="attendance" placeholder="Attendance">
+    <input type="text" id="performance" placeholder="Performance">
+    <button id="add">Add New Value</button>
+    <button id="remove">Remove</button>
+<canvas id="chart">
+
+</canvas>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js">
+
+</script>
+
+<script>
+    var ctx,charts
+    window.addEventListener("load",function(){
+
+        // for adding element
+        let add=document.getElementById("add")
+        add.addEventListener("click",()=>{
+ let month=document.getElementById("month").value;
+let attend=document.getElementById("attendance").value;
+let perform=document.getElementById("performance").value
+let payload={month,attend,perform}
+
+            addData(charts,payload)
+        })
+// for remove
+
+let remove=document.getElementById("remove")
+
+remove.addEventListener("click",()=>{
+    removeData(charts)
+    
+})
+
+// for chart
+ctx=document.getElementById("chart")
+charts=new Chart(ctx,{
+    type:"bar",
+    data:{
+        labels:["January",'Febuary','March','April','may','June'],
+        datasets:[
+            {
+            label:'attendance',
+            data:[100,90,80,70,60,50],
+            backgroundColor:[barColor(260)]
+            },
+            {
+            label:'Performance',
+            data:[84,45,60,67,50,40],
+            backgroundColor:[barColor(240)]
+            }
+
+                 ],
+             borderWidth:1,
+         },
+         options:{
+            scales:{
+                myScale:[
+                    {
+                        ticks:{
+                            beginAtZero:true
+                        }
+                    }
+                ]
+            }
+        }
+})
+
+})
+function random(num){
+    return Math.floor(Math.random()*num)
+}
+function barColor(num){
+return `rgb(${random(260)},${random(260)},${random(260)})`
+}
+
+function addData(charts,payload){
+charts.data.labels.push(payload.month)
+charts.data.datasets[0].data.push(payload.attend)
+charts.data.datasets[1].data.push(payload.perform)
+charts.update()
+
+
+}
+
+
+function removeData(charts){
+    charts.data.labels.pop()
+charts.data.datasets.forEach((ele)=>{
+    return ele.data.pop()
+})
+
+charts.update()
+}
+</script>

@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.both{
+  color:white;
+  background-color:rgb(223, 112, 171);
+  font-size: 20px;
+  margin-top:40px;
+  border:"none";
+  border-radius: 10px;
+}

@@ -1,0 +1,45 @@
+.outer{
+    border: 1px solid black;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.emform div{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    
+    width:35%;
+    margin: auto;
+    margin-top:50px;
+    margin-bottom:20px;
+
+    font-size: 25px;
+}
+.emform input{
+    border-radius: 10px;
+    height:35px;
+}
+.emform h1{
+    text-align: center;
+    color: rgb(91, 152, 132);
+}
+#btn{
+    color:black;
+    background-color:rgb(132, 122, 162);
+    height:50px;
+    width:80%;
+    margin: auto;
+    font-size:30px;
+    border-radius:10px;
+    
+}
+
+.tab{
+   margin-top:50px;
+    padding:20px;
+    text-align: center;
+    height:600px;
+    width:100%;
+}

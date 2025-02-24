@@ -1,0 +1,145 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Novel",
+      "release_year": 2019,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip"
+    },
+    {
+      "id": 2,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Science_Fiction",
+      "release_year": 2020,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://media.istockphoto.com/photos/stack-of-books-picture-id157482029?k=20&m=157482029&s=612x612&w=0&h=b_0K-1Ut9alhKYu9zlgevSAHDkqSxLF634VDwPw8CHU="
+    },
+    {
+      "id": 3,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Novel",
+      "release_year": 2021,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://cdn2.vectorstock.com/i/1000x1000/07/06/books-piled-up-vector-18570706.jpg"
+    },
+    {
+      "id": 4,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Science_Fiction",
+      "release_year": 2022,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://thumbs.dreamstime.com/z/concept-culture-studies-glasses-resting-books-piled-up-glasses-pile-books-138566354.jpg"
+    },
+    {
+      "id": 5,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Thriller",
+      "release_year": 2018,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://casperblog.imgix.net/blog/wp-content/uploads/2020/10/books-1200x880-1.png?auto=format"
+    },
+    {
+      "id": 6,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Thriller",
+      "release_year": 2017,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://static01.nyt.com/images/2021/12/27/books/books-winner-promo/books-winner-promo-videoSixteenByNineJumbo1600.jpg"
+    },
+    {
+      "id": 7,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Novel",
+      "release_year": 2016,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://www.incimages.com/uploaded_files/image/1920x1080/shutterstock_549881917_361412.jpg"
+    },
+    {
+      "id": 8,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Science_Fiction",
+      "release_year": 2015,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://www.coopersalehallschool.co.uk/cooper-content/uploads/2021/06/cio-book-list.png"
+    },
+    {
+      "id": 9,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Motivational",
+      "release_year": 2014,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://leverageedu.com/blog/wp-content/uploads/2019/09/Importance-of-Books.jpg"
+    },
+    {
+      "id": 10,
+      "author": "Masai",
+      "no_of_chapters": 6,
+      "cover_photo": "",
+      "book_name": "Full-Stack Web Development",
+      "category": "Motivational",
+      "release_year": 2013,
+      "chapters": [
+        { "name": "HTML", "pages": 25 },
+        { "name": "CSS", "pages": 20 }
+      ],
+      "image":"https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+    }
+  ]
+ }
+ 

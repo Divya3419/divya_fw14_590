@@ -1,0 +1,100 @@
+.navbar{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    background-color:rgb(24, 59, 24);
+    margin-bottom :40px;
+}
+.navbar img{
+    width:150px;
+    padding-left:30px;
+    cursor: pointer;
+}
+.navbar div{
+    height:100px;
+
+}
+.link{
+    color:rgb(228, 214, 214);
+    font-size: 18px;
+    padding-top: 30px;
+    text-decoration: none;
+}
+.left{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    
+    text-decoration: none;
+}
+.right{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+.right img{
+    width:50px;
+    margin-top: 20px;
+}
+.btn{
+    color:white;
+    background-color:rgb(78, 124, 78);
+    border-radius: 10px;
+    height:55px;
+    font-size: 18px;
+    width:150px;
+margin-top:20px;
+cursor: pointer;
+
+}
+.btn:hover{
+    border:2px solid rgb(78, 124, 78);
+    background:transparent;
+    cursor: pointer;
+
+}
+.ban{
+    background-color:grey;
+font-size: 18px;
+
+}
+
+/* footer page */
+.down{
+    background-color:rgb(24, 59, 24);
+}
+
+.part1{
+    display:flex;
+    color: white;
+    padding-left:70px;
+   
+}
+.part1 p{
+    margin-right:20px;
+    font-size: 18px;
+}
+.footer{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.footer div{
+    border-top:2px solid rgb(101, 109, 101);
+    height:100px;
+}
+
+.icon img{
+    width:25px;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.term{
+    display:flex;
+    color:aliceblue;
+   
+
+}
+.term p{
+    margin-right: 20px;
+}
+

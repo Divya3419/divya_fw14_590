@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar </title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    
+   <header> 
+    <input type="checkbox" id="menu-bar"/>
+    <label for="menu-bar">
+<div class="menu"></div>
+<div class="menu"></div>
+<div class="menu"></div>
+    </label>
+    <a href="#" class="logo"><img src="https://www.masaischool.com/img/navbar/logo.svg"/></a>
+    <nav class="navbar">
+        <ul>
+            
+            <l1 class="list"><a class="title" id="downbar" href="">COURSES^</a>
+            <ul for="downDiv"  id="showDiv" class="courselist">
+               
+                <li   class="courses">
+                    <div class="coursesDiv">
+                        <p class="web">FULL TIME</p>
+                        <div>
+                        <p>FULL STACK WEB DEVELOPMENT</p>
+                    </div>
+                    </div>
+                </li>
+                <li class="courses">
+                    <div class="coursesDiv">
+                        <p class="web">PART TIME</p>
+                        <div>
+                        <p class="webtitle">FULL STACK WEB DEVELOPMENT</p>
+                        <p>DATA ANALYTICS</p>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+            </l1>
+            <l1 class="list"><a class="title" href="">FEES & ISA</a></l1>
+            <l1 class="list"><a class="title" href="">ABOUT US</a></l1>
+            <l1 class="list"><a class="title" href="">HIRE FROM US</a></l1>
+            <l1 class="list"><a class="title" href="">FAQ</a></l1>
+            <l1 class="list"><a class="title" href="">EVENTS</a></l1>
+           
+        </ul>
+        
+    </nav>
+    <button class="apply" >APPLY NOW FOR FREE</button>
+    <button class="login">LOGIN</button>
+</header>
+  
+</body>
+</html>
+<script>
+    let coursediv=document.querySelector("#downbar")
+    let courses=document.querySelector("#showDiv")
+    coursediv.addEventListener("click",(e)=>{
+       e.preventDefault()
+       courses.style.display="inline-block"
+       
+    })
+    coursediv.addEventListener("dblclick",(e)=>{
+     
+       courses.style.display="none"
+       
+    })
+</script>

@@ -1,0 +1,19 @@
+.nav{
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top:40px;
+    
+
+}
+
+.link{
+    background-color:teal;
+    color:white;
+    text-decoration: none;
+    border-radius:20px;
+    width:30%;
+    height:30px;
+}
+

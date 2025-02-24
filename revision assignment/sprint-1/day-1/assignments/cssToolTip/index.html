@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width:800px;
+            margin:70px auto;
+              }
+
+              .tooltip{
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px solid black;
+                margin:20px;
+              }
+
+              .tooltip .tooltiptop{
+                visibility: hidden;
+                width:120px;
+                background-color:#000;
+                color:white;
+                text-align: center;
+                border-radius:10px;
+                padding:5px 0;
+                position:absolute;
+                z-index:1;
+                bottom:100%;
+                left:50%;
+                margin-left:-60px;
+
+                 /* made fade in */
+                 opacity: 0;
+                 transition: opacity 1s;
+
+
+
+              }
+       .tooltip:hover .tooltiptop{
+visibility: visible;
+opacity: 1;
+
+       }
+
+       /* //make marker */
+       .tooltip .tooltiptop::after{
+        content:" ";
+        position: absolute;
+        top:100%;
+        left:50%;
+        margin-left:-5px;
+        border-width:5px;
+        border-style:solid;
+        border-color: black transparent transparent transparent ;
+
+       }
+
+       /* //left */
+       .tooltip .tooltipleft{
+                visibility: hidden;
+                width:120px;
+                background-color:#000;
+                color:white;
+                text-align: center;
+                border-radius:10px;
+                padding:5px 0;
+                position:absolute;
+                z-index:1;
+                bottom:100%;
+                left:50%;
+                margin-left:-60px;
+
+                 /* made fade in */
+                 opacity: 0;
+                 transition: opacity 1s;
+
+
+
+              }
+       .tooltip:hover .tooltipleft{
+visibility: visible;
+opacity: 1;
+
+       }
+
+       /* //make marker */
+       .tooltip .tooltipleft::after{
+        content:" ";
+        position: absolute;
+        top:100%;
+        left:50%;
+        margin-left:-5px;
+        border-width:5px;
+        border-style:solid;
+        border-color: black transparent transparent transparent ;
+
+       }
+
+       /* right */
+       .tooltip .tooltipright{
+                visibility: hidden;
+                width:120px;
+                background-color:#000;
+                color:white;
+                text-align: center;
+                border-radius:10px;
+                padding:5px 0;
+                position:absolute;
+                z-index:1;
+                bottom:100%;
+                left:50%;
+                margin-left:-60px;
+
+                 /* made fade in */
+                 opacity: 0;
+                 transition: opacity 1s;
+
+
+
+              }
+       .tooltip:hover .tooltipright{
+visibility: visible;
+opacity: 1;
+
+       }
+
+       /* //make marker */
+       .tooltip .tooltipright::after{
+        content:" ";
+        position: absolute;
+        top:100%;
+        left:50%;
+        margin-left:-5px;
+        border-width:5px;
+        border-style:solid;
+        border-color: black transparent transparent transparent ;
+
+       }
+
+       /* bottom */
+       .tooltip .tooltipbottom{
+                visibility: hidden;
+                width:120px;
+                background-color:#000;
+                color:white;
+                text-align: center;
+                border-radius:10px;
+                padding:5px 0;
+                position:absolute;
+                z-index:1;
+                bottom:100%;
+                left:50%;
+                margin-left:-60px;
+
+                 /* made fade in */
+                 opacity: 0;
+                 transition: opacity 1s;
+
+
+
+              }
+       .tooltip:hover .tooltipbottom{
+visibility: visible;
+opacity: 1;
+
+       }
+
+       /* //make marker */
+       .tooltip .tooltipbottom::after{
+        content:" ";
+        position: absolute;
+        top:100%;
+        left:50%;
+        margin-left:-5px;
+        border-width:5px;
+        border-style:solid;
+        border-color: black transparent transparent transparent ;
+
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="tooltip">Left
+
+            <span class="tooltipleft">tooltip Left</span>
+        </div>
+
+        <div class="tooltip">Top
+
+            <span class="tooltiptop">tooltip Top</span>
+        </div>
+
+        <div class="tooltip">Bottom
+
+            <span class="tooltipbottom">tooltip Bottom</span>
+        </div>
+
+        <div class="tooltip">Right
+
+            <span class="tooltipright">tooltip Right</span>
+        </div>
+    
+    </div>
+</body>
+</html>

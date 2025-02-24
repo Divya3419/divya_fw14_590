@@ -1,0 +1,42 @@
+import { loadData, saveData } from "../../utils/localStorage";
+import { LoginFailure, LoginRequest, LoginSuccess } from "./action";
+
+const token=loadData("token");
+console.log(token)
+const initialState = {
+
+    isAuthenticated: token ? true : false,
+    token: token || [],
+    isError:false,
+    isLoading: false,
+}
+
+export const authReducer=(state=initialState,{type,payload})=>{
+    switch(type){
+    
+        case LoginRequest:
+            return {
+                ...state,
+                isLoading:true,
+                isError: false,
+            }
+
+        case LoginSuccess:
+            saveData("token",payload)
+            return {
+                ...state,
+                isAuthenticated: true,
+                isLoading:false,
+                token: payload
+            }
+        case LoginFailure:
+            return {
+                ...state,
+                isAuthenticated: false,
+                token:"",
+                isError:true,
+                isLoading:false
+            }
+            default: return state
+    }
+}

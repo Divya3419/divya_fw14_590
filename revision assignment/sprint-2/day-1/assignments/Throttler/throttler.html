@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Throttler</h1>
+        <button id="btn">click</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function throttler(){
+    // write code here
+}
+
+//button.addEventListener("click",throttler(callback,delay))
+
+   
+
+   
+
+    function throttle() {
+        console.log("Expence")
+    }
+    const betterThrottle=throttling(throttle,100)
+   
+const throttling=(fun,limit)=>{
+let flag=true
+return function(){
+    let context=this,
+    arg=arguments
+    if(flag){
+        func.apply(context,arg)
+
+    }
+    flag=false
+
+    setTimeout(function(){
+        flag=true
+    },limit)
+}
+}
+window.addEventListener("resize",betterThrottle())
+
+  
+</script>

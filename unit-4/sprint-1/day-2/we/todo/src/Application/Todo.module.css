@@ -1,0 +1,62 @@
+.container{
+  width:30%;
+  margin:auto;
+
+}
+
+.int {
+  border: none;
+  border-radius: 10px;
+  height: 55px;
+  width: 82%;
+  margin-right: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.btn {
+  border-radius: 10px;
+  height: 55px;
+  width: 14%;
+  border: none;
+  font-size: 30px;
+  background-color: white;
+}
+
+.list{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  border-radius: 10px;
+  padding:1px;
+  padding-left:20px;
+  font-size: 25px;
+  margin-bottom: 30px;
+  background-color:white;
+}
+.circle{
+  border-radius:100%;
+  width:30%;
+  height:80%;
+  margin-top:6px;
+  background-color: blue;
+}
+.inner{
+  border-radius:100%;
+  width:60%;
+  height:60%;
+  margin:auto;
+  margin-top:12px;
+  background-color:grey;
+
+}
+.strike {
+  text-decoration: line-through;
+}
+.value {
+  border: "none";
+  border-radius: 7px;
+  height: 40px;
+  width: 80%;
+  margin-right: 10px;
+
+  font-size: 25px;
+}

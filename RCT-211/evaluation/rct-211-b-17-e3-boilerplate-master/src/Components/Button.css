@@ -1,0 +1,45 @@
+.btn{
+    color:white;
+    cursor: pointer;
+}
+
+.red{
+    background-color:red
+}
+.yellow{
+    background-color:yellow;
+    color:black;
+}
+.orange{
+    background-color:orange;
+    color:black;
+}
+.green{
+    background-color:green;
+    color:black;
+}
+/* //varient */
+.solid{
+    border:2px solid black
+}
+.ghost{
+border:none
+}
+.outline{
+    border:outline solid black;
+}
+/* size */
+.sm{
+    font-size:smaller;
+}
+.md{
+
+    font-size:medium;
+}
+
+.lg{
+    font-size:large;
+}
+.xl{
+    font-size:larger;
+}
