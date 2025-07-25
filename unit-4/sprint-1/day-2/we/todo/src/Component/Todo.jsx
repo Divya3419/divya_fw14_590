@@ -5,10 +5,15 @@ const Todo = () => {
   const [value, setValue] = useState("");
   const [todo, setTodo] = useState([]);
 
+  const handleChange = (e) => {
+    setValue(e.target.value);
+  };
+
   const itemDelete = (id) => {
     let newTodo = todo.filter((ele) => ele.id !== id);
     setTodo(newTodo);
   };
+
   return (
     <div style={{ margin: "auto" }}>
       {todo.map((ele) => (
@@ -18,16 +23,14 @@ const Todo = () => {
       <input
         className={styles.int}
         value={value}
-        onChange={(e) => {
-          setValue(e.target.value);
-        }}
+        onChange={handleChange}
         placeholder="Write Something"
       />
 
       <button
         className={styles.btn}
         onClick={() => {
-          setTodo([...todo, { id: Date.now(), value: value }]);
+          setTodo([...todo, { id: Date.now(), value: value, status: false }]);
           setValue("");
         }}
       >
