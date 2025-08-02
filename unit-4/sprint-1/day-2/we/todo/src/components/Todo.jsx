@@ -11,7 +11,7 @@ const Todo = () => {
   };
 
   const handleClick = () => {
-    if(task.trim()==="") return 
+    if (task.trim() === "") return;
     let taskObj = {
       id: nanoid(),
       title: task.trim(),
@@ -21,37 +21,51 @@ const Todo = () => {
     setTask("");
   };
 
+  const handleChecked = (id) => {
+    setTodo(
+      todo.map((ele) => {
+        if (ele.id === id) {
+          return {
+            ...ele,
+            status: !ele.status,
+          };
+        } else {
+          return ele;
+        }
+      })
+    );
+  };
+
+  const handleDelete = (id) => {
+    setTodo(todo.filter((ele) => ele.id !== id));
+  };
   return (
-    <div>
+    <>
       {todo.map((ele) => {
-        return <TodoItem key={ele.id} ele={ele} />;
+        return (
+          <div key={ele.id} style={{ display: "flex" }}>
+            <input
+              type="checkbox"
+              checked={ele.status}
+              onChange={() => handleChecked(ele.id)}
+            />
+            <h1 style={{ textDecoration: ele.status ? "line-through" : "" }}>
+              {ele.title}
+            </h1>
+            <button onClick={() => handleDelete(ele.id)}>Delete</button>
+          </div>
+        );
       })}
 
       <input
-        style={{
-          width: "80%",
-          height: "50px",
-          borderRadius: "13px",
-          marginRight: "8px",
-        }}
-        type={"text"}
+        type="text"
         placeholder="Write Something"
         value={task}
         onChange={handleChange}
       />
 
-      <button
-        style={{
-          width: "15%",
-          height: "50px",
-          borderRadius: "13px",
-          fontSize: "28px",
-        }}
-        onClick={handleClick}
-      >
-        +
-      </button>
-    </div>
+      <button onClick={handleClick}>+</button>
+    </>
   );
 };
 export default Todo;
