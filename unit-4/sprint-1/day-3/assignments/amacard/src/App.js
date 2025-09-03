@@ -1,14 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Amacardetail from './components/Amazondetail';
+import logo from "./logo.svg";
+import "./App.css";
+import Amacardetail from "./components/Amazondetail";
 
 function App() {
-  return (
-    
-    <Amacardetail/>
-
-    
-  );
+  return <Amacardetail />;
 }
 
 export default App;

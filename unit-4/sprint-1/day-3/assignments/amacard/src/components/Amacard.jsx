@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Amacard.module.css";
 const Amacard = (props) => {
   return (
-    <div className={styles.card} style={{ backgroundColor: `${props.color}` }}>
+    <div className={styles.card} style={{ backgroundColor: props.color }}>
       <div className={styles.left}>
         <h2>{props.date}</h2>
         <p className={styles.diff}>{props.heading}</p>
