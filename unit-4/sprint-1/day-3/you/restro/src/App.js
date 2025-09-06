@@ -8,7 +8,7 @@ function App() {
   const [detail,setDetail]=useState(false)
   return (
     <div className="App">
-      <button className="both" onClick={()=> setDetail(!detail)}>{!detail ?"Order Food" :"Add New Detail"}</button>
+      <button className="both" onClick={()=> setDetail(!detail)}>{!detail ?"Add New Detail" :"Order food"}</button>
   {!detail ? <Restro/>:<Restform/>} 
     </div>
   );
