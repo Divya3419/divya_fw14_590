@@ -18,9 +18,9 @@ function App() {
      
 {/* <button onClick={()=>setShowcounter(!showcounter)}>Toggle</button>
      {showcounter && <Counter/> } */}
-
-     {/* <Timer/>  */}
-  {/* <Stopwatch/>  */}
+<Counter/>
+     <Timer/>
+  <Stopwatch/>
  <Watch start="0"  end="20"/>
     </div>
   );
